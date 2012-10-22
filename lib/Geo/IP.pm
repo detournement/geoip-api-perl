@@ -167,13 +167,13 @@ AS OC AS AF OC AS EU NA OC AS
 AF EU AF OC NA SA AS EU NA SA 
 NA NA AS OC OC OC AS AF EU AF 
 AF EU AF -- -- -- EU EU EU EU 
-NA NA 
+NA NA NA
 /;
 
 my @countries = (
   undef, qw/
  AP EU AD AE AF AG AI 
- AL AM AN AO AQ AR AS AT 
+ AL AM CW AO AQ AR AS AT
  AU AW AZ BA BB BD BE BF 
  BG BH BI BJ BM BN BO BR 
  BS BT BV BW BY BZ CA CC 
@@ -203,7 +203,7 @@ my @countries = (
  UM US UY UZ VA VC VE VG 
  VI VN VU WF WS YE YT RS 
  ZA ZM ME ZW A1 A2 O1 AX 
- GG IM JE BL MF/
+ GG IM JE BL MF BQ/
 );
 
 
@@ -214,7 +214,7 @@ for ( 1 .. $#countries ) {
 
 my @code3s = ( undef, qw/
                    AP  EU  AND ARE AFG ATG AIA
-               ALB ARM ANT AGO ATA ARG ASM AUT
+               ALB ARM CUW AGO ATA ARG ASM AUT
                AUS ABW AZE BIH BRB BGD BEL BFA
                BGR BHR BDI BEN BMU BRN BOL BRA
                BHS BTN BVT BWA BLR BLZ CAN CCK
@@ -244,7 +244,7 @@ my @code3s = ( undef, qw/
                UMI USA URY UZB VAT VCT VEN VGB
                VIR VNM VUT WLF WSM YEM MYT SRB
                ZAF ZMB MNE ZWE A1  A2  O1  ALA
-			   GGY IMN JEY BLM MAF         /
+			   GGY IMN JEY BLM MAF BES         /
 );
 my @names = (
               undef,
@@ -257,7 +257,7 @@ my @names = (
               "Anguilla",
               "Albania",
               "Armenia",
-              "Netherlands Antilles",
+              "Curacao",
               "Angola",
               "Antarctica",
               "Argentina",
@@ -499,7 +499,8 @@ my @names = (
               "Isle of Man",
               "Jersey",
 			  "Saint Barthelemy",
-			  "Saint Martin"
+			  "Saint Martin",
+			  "Bonaire, Saint Eustatius and Saba"
 );
 
 ## created with:
